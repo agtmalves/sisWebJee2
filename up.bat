@@ -1,0 +1,4 @@
+xcopy /e /y "E:\Documentos\AGT DOC\TI\Projects\JavaWeb\sisWebJee2\classes" "E:\Arquivos de Programas\Apache Software Foundation\Tomcat 9.0\webapps\sisWebJee2\WEB-INF\classes"
+xcopy /e /y "E:\Documentos\AGT DOC\TI\Projects\JavaWeb\sisWebJee2\etc\*.*" "E:\Arquivos de Programas\Apache Software Foundation\Tomcat 9.0\webapps\sisWebJee2\WEB-INF"
+xcopy /e /y "E:\Documentos\AGT DOC\TI\Projects\JavaWeb\sisWebJee2\lib" "E:\Arquivos de Programas\Apache Software Foundation\Tomcat 9.0\webapps\sisWebJee2\WEB-INF\lib"
+xcopy /e /y "E:\Documentos\AGT DOC\TI\Projects\JavaWeb\sisWebJee2\web\*.*" "E:\Arquivos de Programas\Apache Software Foundation\Tomcat 9.0\webapps\sisWebJee2"
