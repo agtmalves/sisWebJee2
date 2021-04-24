@@ -6,17 +6,18 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 		<title>Cadastro de Profissionais!</title>
+		<link rel="stylesheet" href="util/estilo.css" >
 	</head>
 	<body>
-		<div>
+		<div class="conteudo">
 			<table border="1">
 				<tr>
-					<td style="width:100px; text-align:center">
-						LOGO<br>
-						AQUI!
+					<td style="width:128px; text-align:center">
+						<img src= "img/id-card.png" width="128" height="128"
+							alt="siswebjee"/>
 					</td>
-					<td style="600px;">
-						TÍTULO AQUI
+					<td style="width:600px;">
+						<%@include file="util/topo.html"%>
 					</td>
 				</tr>
 				<tr>
@@ -36,7 +37,7 @@
 				</tr>
 				<tr>
 					<td colspan="2">
-						AQUI RODAPÉ!
+						<p id="rodape"> Copyright© 2021 - siswebjee®</p>
 					</td>
 				</tr>
 			</table>
