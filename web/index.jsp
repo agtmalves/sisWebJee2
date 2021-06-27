@@ -1,16 +1,40 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 
+<%!
+	String acao,opcao;
+%>
+
 <!DOCTYPE html>
+
+<% 
+	acao = request.getParameter("acao");
+	if(acao!=null){
+			if(acao.equals("novo")){
+				opcao="base/novo.jsp";
+			}else if(acao.equals("editar")){
+				opcao="base/editar.jsp";
+			}else if(acao.equals("excluir")){
+				opcao="base/excluir.jsp";
+			}else if(acao.equals("listar")){
+				opcao="base/listar.jsp";
+			}else if(acao.equals("home")){
+				opcao="base/home.jsp";
+			}
+	}else{
+		opcao="base/home.jsp";
+	}
+	%>
 		
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 		<title>Cadastro de Profissionais!</title>
 		<link rel="stylesheet" href="util/estilo.css" >
+		<script language="javascript"  src="util/funcoes.js"></script>
 	</head>
 	<body>
 		<div class="conteudo">
-			<table border="1">
+			<table>
 				<tr>
 					<td style="width:128px; text-align:center">
 						<img src= "img/id-card.png" width="128" height="128"
@@ -21,7 +45,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td style="width=100px; text-align:center">
+					<td id="menu">
 						<h3>
 							Opções<br><br>
 							<a href="index.jsp?acao=home">. Home .</a><br>
@@ -32,7 +56,7 @@
 						</h3>
 					</td>
 					<td>
-						FORMULÁRIO
+						<jsp:include page="<%=opcao %>" />
 					</td>
 				</tr>
 				<tr>
