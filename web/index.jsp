@@ -55,7 +55,7 @@
 							<a href="index.jsp?acao=listar">. Listar .</a><br>
 						</h3>
 					</td>
-					<td>
+					<td id="principal" style="vertical-align:top">
 						<jsp:include page="<%=opcao %>" />
 					</td>
 				</tr>
