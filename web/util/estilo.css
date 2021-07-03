@@ -1,12 +1,12 @@
 body{
-	font-family:tahoma, arial;
+
 	background-color:beige;
 }
 
 table,tr,td{
 	border:2px groove;
 	border-color: royalblue;
-	padding: 4px;
+	padding: 3px;
 	background-color: skyblue;
 }
 
@@ -26,6 +26,26 @@ a:hover{
 	color:white;
 }
 
+div:after{
+	border:0 none;
+	border-color:white;
+	padding:0px;
+	background-color:white;
+}
+
+div.before{
+	margin-bottom:0px;
+}
+
+.conteudo{
+	margin:0;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	margin-right:-50%;
+	transform: translate(-50%,-50%);
+}
+
 #titulo{
 	color:royalblue;
 	text-align:center;
@@ -36,6 +56,12 @@ a:hover{
 	padding:0px;
 }
 
+#menu{
+	font-family: tahoma, arial;
+	width:100px;
+	text-align:center;
+}
+	
 #email{
 	text-decoration:none;
 	text-align:center;
@@ -65,12 +91,27 @@ a:hover{
 	padding:0px;
 }
 
-div.conteudo{
-	margin: 0;
-	background-color: yellow;
-	position: absolute;
-	top:50%;
-	left:50%;
-	margin-right:-50%;
-	transform: translate(-50%,-50%);
+#principal{
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-right:0px;
+	margin-left:0px;
+	padding:0;
 }
+
+.inicial table tr td {
+	
+	border-style:none;
+	border-width:0;
+	border-color:white;
+	background:skyblue;
+	
+	text-align:justify;
+	font-family:helvetica,arial,sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
