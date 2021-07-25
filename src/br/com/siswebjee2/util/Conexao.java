@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 
 public class Conexao {
 	private String driver = "oracle.jdbc.driver.OracleDriver";
-	private String url = DbPath;
-	private String usuario = Dblogin;
-	private String senha = Dbpass;
+	private String url = Config.DbPath;
+	private String usuario = Config.Dblogin;
+	private String senha = Config.Dbpass;
 	private Connection conexao;
 	
 	public Conexao(String driver, String url, String usuario, String senha){
