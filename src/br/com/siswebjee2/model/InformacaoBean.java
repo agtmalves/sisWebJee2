@@ -1,6 +1,6 @@
 package br.com.siswebjee2.model;
 
-import java.sql,Connection;
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -35,7 +35,7 @@ public class InformacaoBean {
 		}
 		
 		public void setConexao(Connection conexao) {
-			this.conexao;
+			this.conexao=conexao;
 		}
 		
 		public boolean gravarInformacao(String tabela){
@@ -89,8 +89,8 @@ public class InformacaoBean {
 				instrucaoP.setInt(1,codigo);
 				ResultSet resultado = instrucaoP.executeQuery();
 				if(resultado.next()) {
-					info.setCodigo(resultado.getInt("codigo");
-					info.setNome(resultado.getString("nome");
+					info.setCodigo(resultado.getInt("codigo"));
+					info.setNome(resultado.getString("nome"));
 				}else{
 					info=null;
 				}
@@ -111,8 +111,8 @@ public class InformacaoBean {
 				ResultSet resultado = instrucaoP.executeQuery();
 				while(resultado.next()) {
 					InformacaoBean info= new InformacaoBean();
-					info.setCodigo(resultado.getInt("codigo");
-					info.setNome(resultado.getString("nome");
+					info.setCodigo(resultado.getInt("codigo"));
+					info.setNome(resultado.getString("nome"));
 					listaInfo.add(info);
 				}
 				resultado.close();
