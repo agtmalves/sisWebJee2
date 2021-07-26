@@ -1,4 +1,4 @@
-package br.com.siswebjee2.util
+package br.com.siswebjee2.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -31,7 +31,7 @@ public class Conexao {
 	}
 	
 	public Connection obterConexao() {
-		return this.conexao
+		return this.conexao;
 	}
 	
 	public void desconectar() {
